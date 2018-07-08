@@ -22,7 +22,7 @@ const add_questions = [
   {
     type: "input",
     name: "locale",
-    message: "Enter locale (ex: en-US) or leave blank for default (en-US):"
+    message: "Enter locale (ex: en-US) or leave blank for default (he-IL):"
   }
 ];
 
@@ -60,6 +60,7 @@ program
         if (dirs.length>0)
         {
           result.dirs = dirs;
+          if (result.dirs[0]==".DS_Store") result.dirs.shift();
           return addTranslates(result);
         }
         throw "No locales found!";

@@ -2,7 +2,9 @@
   "name": "translate",
   "version": "1.0.0",
   "description": "Quick adding keys and values to translations.json files",
-  "main": "index.js",
+  "main": "cli.js",
+  "preferGlobal": true,
+  "bin": "./cli.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
@@ -27,6 +29,6 @@
     "commander": "^2.16.0",
     "inquirer": "^6.0.0",
     "request": "^2.87.0",
-    "shell": "^0.5.0"
+    "shelljs": "^0.8.2"
   }
 }
